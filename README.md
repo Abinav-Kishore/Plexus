@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+Plexus — Student Dashboard Platform
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Plexus is a centralized student dashboard designed to simplify academic resource management, campus announcements, and administrative workflows through a unified web and mobile experience.
 
-## Get started
+Overview
 
-1. Install dependencies
+Students often rely on multiple platforms to access academic information, track announcements, and stay updated on institutional activities. Plexus aims to bring these essential workflows into one accessible platform, while providing administrators with tools to manage information efficiently.
 
-   ```bash
-   npm install
-   ```
+Features
+Centralized Dashboard: Access academic resources, announcements, and relevant student information from one place.
+Role-Based Access Control: Separate student and administrator access to protected features and workflows.
+Academic Resource Management: Organize and access academic materials through a unified interface.
+Announcements: Provide a centralized way to communicate important updates.
+Administrative Workflows: Support authorized management of student-facing information.
+Responsive Interface: Designed for convenient access across supported web and mobile devices.
+Tech Stack
+Frontend: React, React Native, HTML, CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Communication: REST APIs
+Authentication & Authorization: Role-based access control
+Architecture
 
-2. Start the app
+Plexus follows a client-server architecture:
 
-   ```bash
-   npx expo start
-   ```
+The frontend provides the student and administrator interfaces.
+The backend handles application logic and API requests.
+The database stores application data and academic resources.
+Authentication and authorization rules restrict access to protected operations.
+Getting Started
+Prerequisites
+Node.js and npm
+Git
+MongoDB, if used by the configured backend
+Installation
 
-In the output, you'll find options to open the app in a
+Clone the repository:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+git clone https://github.com/Abinav-Kishore/Plexus.git
+cd Plexus
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+Install dependencies:
 
-When you're ready, run:
+npm install
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Start the application using the command configured in package.json:
 
-## Learn more
+npm start
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+For an Expo-based application, follow the Expo CLI instructions provided by the project configuration.
 
-## Join the community
+Future Improvements
+Add automated testing for authentication and protected routes.
+Improve accessibility and mobile responsiveness.
+Introduce monitoring and structured error logging.
+Add pagination and search for larger collections of academic resources.
+Contribution
 
-Join our community of developers creating universal apps.
+Contributions, bug reports, and suggestions are welcome.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+License
+
+Add the appropriate license information for this project.
